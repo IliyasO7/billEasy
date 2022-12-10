@@ -27,7 +27,7 @@ app.get('/employee/:id', (req, res)=>{
     client.end;
 })
 
-const bodyParser = require("body-parser");
+const bodyParser = require("body-parser"); // converting app req body into objects
 app.use(bodyParser.json());
 
 
@@ -90,7 +90,7 @@ trigger ---->>>> written code in database >>>>>
 })
 
 
-app.delete('/employee/:id', (req, res)=> {
+app.delete('/employee/:id', (req, res)=> {   //deleteing a single id
     let insertQuery = `delete from employee where id=${req.params.id}`
 
     client.query(insertQuery, (err, result)=>{
