@@ -6,6 +6,8 @@ app.listen(7000, ()=>{
     console.log("Sever is now listening at port 7000");
 })
 
+
+//>>>>>>>>>>>>>>>>>>              CREATION OF TABLE AND TRIGGERS ARE IN SCRIP.JS               <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 client.connect();
 
 app.get('/employee', (req, res)=>{

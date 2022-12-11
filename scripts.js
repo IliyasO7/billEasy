@@ -1,4 +1,28 @@
 /*
+// creation of tables
+CREATE TABLE employee(  
+  
+eid INT,  
+did INT, 
+name VARCHAR(60), 
+PRIMARY KEY(eid),  
+CONSTRAINT fk_department  
+FOREIGN KEY(did)   
+REFERENCES department(did)  
+);  
+
+CREATE TABLE department(  
+did INT,  
+dname VARCHAR(60),  
+PRIMARY KEY(did)    
+);  
+
+
+
+
+
+
+**********************************************
 select * from public.employee;
 
 select * from public.employeeCount
